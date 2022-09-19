@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<!-- Fig. 2.13: tabla2.html -->
+<!-- Tabla de HTML5 compleja. -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tablas</title>
+    </head>
+
+    <body>
+        <button onclick="location.href='/index.html#Ejem2'">Regresar</button>
+        <h1>Ejemplo de tabla: combinado de filas y columnas</h1>
+
+        <table border="1">
+            <caption>Una tabla de muestra más compleja</caption>
+
+            <thead>
+                <!-- los elementos rowspan y colspan combinan el número -->
+                <!-- especificado de celdas en sentido vertical u horizontal -->
+                <tr>
+                    <!-- combina dos filas -->
+                    <th rowspan="2">
+                        <img src="camello.png" width="205" 
+                            height="167" alt="Imagen de un camello con una joroba">
+                    </th>
+
+                    <!-- combina cuatro columnas -->
+                    <th colspan="4">
+                        <strong>Comparación de camélidos</strong><br>
+                        Fecha aproximada: 10/2011
+                    </th>
+                </tr>
+                <tr>
+                    <th># jorobas</th>
+                    <th>Región indígena</th>
+                    <th>Escupe?</th>
+                    <th>Produce lana?</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Camellos (bactrianos)</th>
+                    <td>2</td>
+                    <td>África/Asia</td>
+                    <td>Sí</td>
+                    <td>Sí</td>
+                </tr>
+                <tr>
+                    <th>Llamas</th>
+                    <td>1</td>
+                    <td>Montañas de los Andes</td>
+                    <td>Sí</td>
+                    <td>Sí</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

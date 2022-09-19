@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<!-- Fig. 2.16: interna.html -->
+<!-- Vinculación interna -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vínculos internos</title>
+    </head>
+    <body>
+        <button onclick="location.href='/index.html#Ejem2'">Regresar</button>
+        <!-- el atributo id crea un destino de hipervínculo interno -->
+        <h1 id="caracteristicas">Las mejores características de internet</h1>
+
+        <!-- la dirección de un vínculo interno es "#id" -->
+        <p><a href="#insectos">Ir a <em>Insectos favoritos</em></a></p>
+
+        <ul>
+            <li>Puede conocer personas de países de todo el mundo</li>
+            <li>Tiene acceso a los medios a medida que se vuelven públicos
+                <ul>
+                    <li>Nuevos juegos</li>
+                    <li>Nuevas aplicaciones
+                        <ul>
+                            <li>Por negocios</li>
+                            <li>Por placer</li>
+                        </ul>
+                    </li>
+                    <li>Noticias de todo el mundo</li>
+                    <li>Motores de busqueda</li>
+                    <li>compras
+                        <ul>
+                            <li>Secuencias de comandos</li>
+                            <li>Nuevos lenguajes</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>Vinculos</li>
+            <li>Mantenerse en contacto con viejos amigos</li>
+            <li>Es la tecnología del futuro</li>
+        </ul>
+
+        <!-- el atributo id crea un destino de hipervínculo interno -->
+        <h1 id="insectos">Mis 3 insectos favoritos</h1>
+
+        <!-- hipervínculo interno a las características -->
+        <p><a href="#caracteristicas">Ir a <em>características favoritas</em></a></p>
+
+        <ol>
+            <li>Luciérnaga</li>
+            <li>Hormiga roja</li>
+            <li>Abejorro</li>
+        </ol>
+    </body>
+</html>

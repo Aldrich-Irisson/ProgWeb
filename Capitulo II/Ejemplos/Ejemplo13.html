@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<!-- Fig. 2.15: formulario2.html -->
+<!-- Formulario que usa una variedad de componentes. -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Más formularios</title>
+    </head>
+
+    <body>
+        <button onclick="location.href='/index.html#Ejem2'">Regresar</button>
+        <h1>Formulario de retroalimentación</h1>
+        <p>Llene este formulario para ayudarnos a mejorar nuestro sitio.</p>
+
+        <form method="post" action="http://deitel.com">
+
+            <input type="hidden" name="destinatario" value="deitel@deitel.com">
+            <input type="hidden" name="asunto" value="Formulario de retroalimentación">
+            <input type="hidden" name="redirigir" value="Ejemplo1.html">
+
+            <p><label>Nombre:
+                <input type="text" name="nombre" size="25">
+            </label></p>
+            
+            <!-- <textarea> crea un cuadro de texto multilinea -->
+            <p><label>Comentarios:<br>
+                <textarea name="comentarios"  cols="36" rows="4">Escriba aquí los comentarios.</textarea>
+            </label></p>
+
+            <!-- <input type = "password" inserta un cuadro de texto que aparece enmascarado con -->
+            <!-- caracteres de asteriscos -->
+            <p><label">Dirección de correo electrónico:
+                <input type="password" name="email" size="25">
+            </label></p>
+
+            <p>
+                <strong>Cosas que le gustaron:</strong><br>
+
+                <label>Diseño del sitio
+                    <input type="checkbox" name="cosasgustaron" value="Diseno">
+                </label>
+                <label>Vínculos
+                    <input type="checkbox" name="cosasgustaron" value="Vinculos">
+                </label>
+                <label>Facilidad de uso
+                    <input type="checkbox" name="cosasgustaron" value="Facilidad">
+                </label>
+                <label>Imágenes
+                    <input type="checkbox" name="cosasgustaron" value="Imagenes">
+                </label>
+                <label>Código fuente
+                    <input type="checkbox" name="cosasgustaron" value="Codigo">
+                </label>
+            </p>
+
+            <p>
+                <strong>Como llegó a nuestro sitio:</strong><br>
+
+                <label>Motor de busqueda
+                    <input type="radio" name="comositio" value="motor busqueda" checked>
+                </label>
+                <label>Vínculos desde otro sitio
+                    <input type="radio" name="comositio" value="vinculo">
+                </label>
+                <label>Sitio Web de Deitel.com
+                    <input type="radio" name="comositio" value="deitel.com">
+                </label>
+                <label>Referencia en un libro
+                    <input type="radio" name="comositio" value="libro">
+                </label>
+                <label>Otro
+                    <input type="radio" name="comositio" id="otro">
+                </label>
+            </p>
+
+            <p>
+                <label>Califique nuestro sitio: 
+                    <!-- la etiqueta <select> presenta una lista desplegable con -->
+                    <!-- opciones indicadas por las etiquetas <option> -->
+                    <select name="calificación">
+                        <option selected>Sorprendente</option>
+                        <option>10</option>
+                        <option>9</option>
+                        <option>8</option>    
+                        <option>7</option>
+                        <option>6</option>
+                        <option>5</option>
+                        <option>4</option>
+                        <option>3</option>
+                        <option>2</option>
+                        <option>1</option>
+                        <option>Malo</option>
+                    </select>
+                </label>
+            </p>
+
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Borrar">
+            </p>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Además, proporcione un área de texto para comentarios adicionales, un botón para enviar y un botón para
+    restablecer. Use post para enviar la información en d formulario a h ttp ://***.d e i t e l .con. -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 16</title>
+</head>
+
+<body>
+    <button onclick="location.href='/index.html#Ejer2'">Regresar</button>
+    <h1>
+        <center>Formulario de comentarios</center>
+    </h1>
+    <hr>
+    <p>Futuros estudiantes, llenen este formulario para ayudarnos a mejorar las visitas al campus.</p>
+    <form action="http://www.deitel.com" method="post">
+        <input type="hidden" name="destinatario" value="deitel@deitel.com">
+        <input type="hidden" name="asunto" value="Formulario de retroalimentación">
+        <input type="hidden" name="redirigir" value="index.html">
+        <p>
+            <label>Nombre:<br>
+                <input type="text" name="nombre" size="35">
+            </label>
+        </p>
+        <p>
+            <label>Correo electrónico:<br>
+                <input type="text" name="email" size="35">
+            </label>
+        </p>
+        <p>
+            <strong>Cosas que le gustaron del campus:</strong><br>
+            <label>Campus
+                <input type="checkbox" name="cosasgustaron" value="campus">
+            </label>
+            <label>Estudiantes
+                <input type="checkbox" name="cosasgustaron" value="estudiantes">
+            </label>
+            <label>Ubicación
+                <input type="checkbox" name="cosasgustaron" value="ubicacion">
+            </label>
+            <label>Ambiente
+                <input type="checkbox" name="cosasgustaron" value="ambiente">
+            </label>
+            <label>Dormitorios
+                <input type="checkbox" name="cosasgustaron" value="dormitorios">
+            </label>
+            <label>Deportes
+                <input type="checkbox" name="cosasgustaron" value="deportes">
+            </label>
+        </p>
+        <p>
+            <strong>Como supó de la universidad:</strong><br>
+            <label>Amigos
+                <input type="radio" name="comouniversidad" value="amigos" checked>
+            </label>
+            <label>Televisión
+                <input type="radio" name="comouniversidad" value="tv">
+            </label>
+            <label>Internet
+                <input type="radio" name="comouniversidad" value="internet">
+            </label>
+            <label>Otro
+                <input type="radio" name="comouniversidad" value="otro">
+            </label>
+        </p>
+        <p>
+            <label>Comentarios:<br>
+                <textarea name="comentarios" cols="35" rows="5"></textarea>
+            </label>
+        </p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Borrar">
+    </form>
+</body>
+
+</html>
