@@ -10,7 +10,53 @@
 
 <body>
     <button onclick="location.href='../../index.html#indice'">Regresar</button>
-
+    <h2>Escriba un elemento (o elementos) de HTML5 para realizar cada una de las siguientes tareas:</h2>
+    <ol type="a">
+        <li>Se pidió a los estudiantes que clasificaran los alimentos en la cafetería, en una escala del 1 al 10. Use un
+            elemento meter con texto a su izquierda y a su derecha para indicar que la calificación promedio fue 7 de
+            10.</li>
+        0 <meter min="1" max="10" value="7"></meter>10
+        <p></p>
+        <li>Cree un elemento datails que muentre el texto "Resultados de la encuesta" en el elemento summary para la
+            parte (a). Cuando el usuario haga clic en la flecha enseguida del texto de summary, deberá aparecer un
+            párrafo que explique sobre la encuesta.</li>
+        <details>
+            <summary>Resultados de la encuesta</summary>
+            <p>Los siguientes resultados se obtuvieron de los estudiantes en donde se les pidió que clasificaran los
+                alimentos en la cafetería, en una escala del 1 al 10</p>
+        </details><br>
+        <li>Cree un elemento input text para el primer nombre. El elemento deberá recibir el enfoque de manera
+            automática al momento de desplegar el formulario en un navegador.</li>
+        <p><label>Primer nombre:<input type="text" id="primerNombre" placeholder="Primer nombre" /> (Primer nombre)
+            </label></p>
+        <li>Modifique la parte (c) de modo que se elimine el elemento label y use texto en un elemento placeholder en el
+            elemento holder.</li>
+        <p><label>Primer nombre:<input type="text" id="primerNombre" placeholder="Primer nombre" /> (Primer nombre)
+            </label></p>
+        <li>Use un elemento datalist para proveer una lista autocomplete para cinco estados.</li>
+        <p><label for="listaTexto">Estados:
+                <input type="text" id="listaTexto" placeholder="Seleccione un estado" list="estados" />
+                <datalist id="estados">
+                    <option value="Baja California">
+                    <option value="Coahuila">
+                    <option value="Colima">
+                    <option value="Puebla">
+                    <option value="Veracruz">
+                </datalist>
+            </label></p>
+        <li>Cree un elemento input range que permita al usuario seleccionar un número derl 1 al 100.</li>
+        <p><label>Rango:
+                0 <input type="range" min="0" max="100" value="50" /> 100
+            </label></p>
+        <li>Especifique que no debe permitirse el atributo autocomplete en un formulario. Muestre sólo la etiqueta de
+            apertura del formulario.</li>
+        <p>autocomplete="off"</p>
+        <li>Use un elemento mark para resaltar el segundo enunciado del siguiente párrafo:
+            <p>Se pidió a los estudiantes que calificaran los alimentos en la cafetería en una escala del 1 al 10.
+                <mark>El resultado promedio fue de 7.</mark>
+            </p>
+        </li>
+    </ol>
 </body>
 
 </html>

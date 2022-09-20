@@ -10,7 +10,35 @@
 
 <body>
     <button onclick="location.href='../../index.html#indice'">Regresar</button>
-
+    <form action="http://www.deitel.com" method="post" autocomplete="on">
+        <p><label>Primer nombre:<input type="text" id="primerNombre" placeholder="Primer nombre" /> (Primer nombre)
+            </label></p>
+        <p><label>Apellido:
+                <input type="text" id="apellido" placeholder="Apellido" /> (Apellido)
+            </label></p>
+        <p><label>Email:
+                <input type="email" id="email" placeholder="nombre@dominio.com" /> (nombre@dominio.com)
+            </label></p>
+        <details>
+            <summary>Pregunta opcional</summary>
+            <label for="lista">Año de universidad:</label>
+            <input type="text" id="lista" placeholder="Seleccione un año" list="semestres" />
+            <datalist id="semestres">
+                <option value="Primer semestre">Primer semestre</option>
+                <option value="Segundo semestre">Segundo semestre</option>
+                <option value="Tercer semestre">Tercer semestre</option>
+                <option value="Cuarto semestre">Cuarto semestre</option>
+                <option value="Quinto semestre">Quinto semestre</option>
+                <option value="Sexto semestre">Sexto semestre</option>
+                <option value="Septimo semestre">Septimo semestre</option>
+                <option value="Octavo semestre">Octavo semestre</option>
+                <option value="Noveno semestre">Noveno semestre</option>
+            </datalist>
+        </details>
+        <p><input type="submit" value="Enviar" />
+            <input type="reset" value="Borrar" />
+        </p>
+    </form>
 </body>
 
 </html>

@@ -10,7 +10,19 @@
 
 <body>
     <button onclick="location.href='../../index.html#indice'">Regresar</button>
-
+    <form method="post" autocomplete="on">
+        <p><label for="listaTexto">Días de la semana:
+                <input type="text" id="listaTexto" placeholder="Seleccione un día de la semana" list="dias" />
+                <datalist id="dias">
+                    <option value="Lunes">
+                    <option value="Martes">
+                    <option value="Miércoles">
+                    <option value="Jueves">
+                    <option value="Sábado">
+                    <option value="Domingo">
+                </datalist>
+            </label></p>
+    </form>
 </body>
 
 </html>
